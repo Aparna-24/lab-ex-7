@@ -56,8 +56,7 @@ public class employe {
         System.out.println(list);
         Collections.sort(list,new namesort());
         System.out.println(list);
-        Collections.sort(list,new salarysort());
-        System.out.println(list);
+        
     }
     
 }
@@ -88,14 +87,7 @@ class namesort implements Comparator<employee>
         return e1.name.compareTo(e2.name);// positive / negative
     }
 }
-class salarysort implements Comparator<employee>
-{
-    @Override
-    public int compare(employee e1,employee e2)
-    {
-        return (int)(e2.salary-e1.salary);// positive / negative
-    }
-}
+
 
         // TODO code application logic here
     
